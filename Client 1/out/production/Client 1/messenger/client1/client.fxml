@@ -1,0 +1,24 @@
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<BorderPane fx:controller="messenger.client1.Controller"
+            xmlns:fx="http://javafx.com/fxml">
+    <top>
+        <Label text="Java Messenger"/>
+    </top>
+    <center>
+        <ListView fx:id="listView"></ListView>
+    </center>
+    <bottom>
+        <VBox>
+            <TextArea fx:id="textArea" maxHeight="-NaN"/>
+            <HBox>
+                <Button fx:id="sendButton" text="Send" onAction="#handleSendButton"/>
+            </HBox>
+        </VBox>
+    </bottom>
+</BorderPane>
